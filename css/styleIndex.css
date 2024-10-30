@@ -2,10 +2,10 @@
 
 /* Estilo para el cuerpo con un fondo de GIF */
 body {
-    background-image: url('img/105471.gif'); /* Reemplaza con la ruta de tu GIF */
+    background-image: url('/img/105471.gif'); /* Reemplaza con la ruta de tu GIF */
     background-size: cover; /* Cubre toda la pantalla */
     background-repeat: no-repeat; /* No repetir el fondo */
-    background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse */
+    background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse (considerar dispositivos móviles) */
     background-position: center; /* Centra el fondo */
 }
 
