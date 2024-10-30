@@ -1,0 +1,16 @@
+/* Estilo básico para centrar el video en la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro para un mejor contraste */
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+video {
+    max-width: 80%; /* Hacer que el video sea responsivo */
+    height: auto; /* Mantener la relación de aspecto */
+    border: 5px solid #fff; /* Borde blanco alrededor del video */
+    border-radius: 10px; /* Bordes redondeados */
+}

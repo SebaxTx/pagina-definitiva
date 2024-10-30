@@ -1,0 +1,65 @@
+/* Estilo global */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en filas de la tabla */
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Contenedor responsivo para tablas */
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+/* Asegurar que el input de búsqueda no desborde */
+input[type="text"] {
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Centrar encabezado y ajustar márgenes */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .table-container {
+        margin: 5px 0;
+    }
+}

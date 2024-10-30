@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        /* Estilo básico para centrar el video en la página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Fondo negro para un mejor contraste */
+            margin: 0; /* Eliminar margen por defecto */
+        }
+
+        video {
+            max-width: 80%; /* Hacer que el video sea responsivo */
+            height: auto; /* Mantener la relación de aspecto */
+            border: 5px solid #fff; /* Borde blanco alrededor del video */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+
+    <video id="miVideo" controls loop>
+        <source src="/img/arquitectura-breakout - Game Over - Windows, Mac, Linux - Unity 2022.3.50f1 _DX11_ 2024-10-30 14-14-45.mp4" type="video/mp4"> <!-- Reemplaza con la ruta a tu video -->
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <script>
+        window.onload = function() {
+            var video = document.getElementById('miVideo');
+            video.play(); // Reproduce el video automáticamente al cargar la página
+
+            video.addEventListener('ended', function() {
+                alert('El video ha terminado.'); // Muestra un mensaje cuando el video termina
+            });
+        };
+    </script>
+</body>
+</html>

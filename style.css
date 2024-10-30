@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* Estilo para el cuerpo con un fondo de GIF */
+body {
+    background-image: url('/img/105471.gif'); /* Reemplaza con la ruta de tu GIF */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-repeat: no-repeat; /* No repetir el fondo */
+    background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse */
+    background-position: center; /* Centra el fondo */
+}
+
+/* Estilo adicional para el fondo de la tarjeta */
+.card {
+    background-color: rgba(22, 162, 218, 0.85); /* Color de fondo oscuro con opacidad */
+    border: none; /* Elimina el borde de la tarjeta */
+}
+
+/* Estilo de los enlaces */
+.list-group-item {
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    background-color: rgb(118, 170, 228); /* Fondo azul con un 30% de transparencia */
+    color: rgb(255, 255, 255); /* Color del texto */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.list-group-item:hover {
+    background-color: rgba(0, 123, 255, 0.9); /* Cambiar el color de fondo al pasar el mouse con más opacidad */
+    color: rgb(0, 255, 221); /* Cambiar el color del texto */
+}

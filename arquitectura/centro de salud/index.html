@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Salud - Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/arquitectura/centro de salud/styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Centro de Salud</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Pacientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Citas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Doctores</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Gestión de Pacientes</h1>
+
+    <!-- Formulario de búsqueda -->
+    <div class="row mb-4">
+        <div class="col-md-8 offset-md-2">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar paciente por nombre o ID">
+        </div>
+    </div>
+
+    <!-- Contenedor responsivo para la tabla -->
+    <div class="table-container">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="patientTableBody">
+                <!-- Aquí se cargarán los pacientes dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="/arquitectura/centro de salud/script.js"></script>
+</body>
+</html>
